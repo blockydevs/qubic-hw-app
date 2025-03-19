@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+        "allowJs": false,
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "moduleResolution": "node",
+        "pretty": true,
+        "resolveJsonModule": true,
+        "skipLibCheck": true,
+        "sourceRoot": "./",
+        "sourceMap": true,
+        "strict": true,
+        "declaration": true,
+        "declarationMap": true,
+        "downlevelIteration": true,
+        "noImplicitAny": true,
+        "noImplicitThis": true,
+        "module": "ES6",
+        "lib": ["DOM", "ES6"],
+        "isolatedModules": true,
+        "target": "ES6",
+        "outDir": "lib"
+    },
+    "include": ["src/**/*", "index.ts", "index.d.ts"]
+}
