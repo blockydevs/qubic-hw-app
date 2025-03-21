@@ -1,6 +1,6 @@
 {
-    "name": "qubic-hw-app",
-    "version": "0.1.2",
+    "name": "@blockydevs/qubic-hw-app",
+    "version": "0.1.2-RC2",
     "description": "",
     "main": "lib/index.js",
     "module": "lib-es/index.js",
