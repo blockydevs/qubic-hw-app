@@ -40,20 +40,6 @@ export class HWAppQubic {
             throw new Error(validateParams.error.errors[0].message);
         }
 
-        console.log({
-            heeader: Buffer.concat([
-                Buffer.from([LEDGER_CLA, instruction, p1, p2]),
-            ]).toString("hex"),
-            payloadLength: Buffer.from([payload.length]).toString("hex"),
-            payload: payload.toString("hex"),
-
-            allTogether: Buffer.concat([
-                Buffer.from([LEDGER_CLA, instruction, p1, p2]),
-                Buffer.from([payload.length]),
-                payload,
-            ]).toString("hex"),
-        });
-
         const reply = await this.transport.send(
             LEDGER_CLA,
             instruction,
